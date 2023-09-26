@@ -3,23 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>GRID GALLERY</title>
+    
 </head>
 <body>
-    <div class="bg-gray-700">
-         <div class="container mx-auto md:w-3/5 bg-white grid grid-cols-3 grid-rows-4 gap-5">
-            <div class=" col-1 rounded-sm">
-                <img alt="img1" src="./images/coliseo.jpg">
+    <div class="bg-gray-900 pt-36 pb-14">
+        <div class="container mx-auto mb-36">
+            <h1 class="text-4xl text-white text-bold text-center">Grid Gallery con TailwindCSS</h1>
+        </div>
+        <div class="container my-50 mx-auto md:w-4/5 grid grid-cols-2 md:grid-cols-4 gap-5">
+            <div class="grid gap-5">
+                <div class="h-auto max-w-full">
+                    <img class="rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img1.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img10.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img7.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img4.jpg">
+                </div>
             </div>
-            <div class=" col-2">
-                <img alt="img1" src="./images/madrid.jpg">
+            <div class="grid gap-4">
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img5.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img6.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img3.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img8.jpg">
+                </div>
             </div>
-            <div class=" col-3">
-                <img alt="img1" src="./images/pantheon.jpg">
+            <div class="grid gap-4">
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img9.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img2.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img11.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img12.jpg">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img13.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img14.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img15.jpg">
+                </div>
+                <div class="h-auto max-w-full ">
+                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img16.jpg">
+                </div>
             </div>
             
         </div>
+
+        <div class="pb-2 pt-10">
+            <p class="text-center text-white text-lg">Grid Gallery hecho por Ceci ♥</p>
+        </div>
     </div>
 </body>
+ 
 </html>
