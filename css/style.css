@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+body{
+     font-family: 'Oxygen', sans-serif;
+}
+.color-btn{
+    background-color: #00A2FF;
+}
+.card:hover img{
+    background-color: black;
+    opacity: .5;
+}
+ 
+ 
+.card:hover .content-text{
+    opacity: 0;
+}
+.element-hover{
+    opacity: 0;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+  }
+ 
+  
+ .card {
+    display: grid;
+  
+ }
+.card:hover .element-hover{
+    opacity: 1 ;
+}
+
+.bold{
+    font-weight:600;
+}
+
+.content-text{
+    position: absolute;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+ 
+/* ****responsive***** */
+
+@media (max-width:440px) {
+    .text-por{
+        font-size: 30%;
+    }
+}
+@media (max-width:500px) {
+    .text-por{
+        font-size: 60%;
+    }
+}
+@media (max-width:550px) {
+    .text-por{
+        font-size: 80%;
+    }
+}
+@media (max-width:768px) {
+    .text-por{
+        font-size: 150%;
+    }
+}
+@media (max-width:920px) {
+    .text-por{
+        font-size: 100%;
+    }
+}
+@media (min-width:1080px) {
+    .text-por{
+        font-size: 150%;
+    }
+}

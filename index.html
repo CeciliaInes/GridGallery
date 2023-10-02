@@ -2,73 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <title>GRID GALLERY</title>
-    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div class="bg-gray-900 pt-36 pb-14">
+<body class="bg-gray-900 p-4">
+    <div class=" pt-36 pb-14">
+        <!-- titulo -->
         <div class="container mx-auto mb-36">
             <h1 class="text-4xl text-white text-bold text-center">Grid Gallery con TailwindCSS</h1>
         </div>
-        <div class="container my-50 mx-auto md:w-4/5 grid grid-cols-2 md:grid-cols-4 gap-5">
-            <div class="grid gap-5">
-                <div class="h-auto max-w-full">
-                    <img class="rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img1.jpg">
+
+        <div class="container my-50 flex-column columns-2 md:columns-3 mx-auto space-y-4">
+            <!-- <div class="gap-4"> -->
+                <div class="card">
+                    <img class="rounded-lg transition-all duration-500 cursor-pointer " alt="img1" src="./images/img1.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Berlin</p>
+                        <p class="text-white">Alemania</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+           
+                <div class="card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img6.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Santiago</p>
+                        <p class="text-white">Chile</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+            
+                <div class=" card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img7.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Seúl</p>
+                        <p class="text-white">Corea del Sur</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+            <!-- </div>    -->
+            <!-- <div class="gap-4"> -->
+                <div class=" card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img8.png">
+                    <div class="content-text">
+                        <p class="text-white bold">San Salvador</p>
+                        <p class="text-white">Salvador</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+                <div class=" card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img5.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Tirana</p>
+                        <p class="text-white">Albania</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+                <div class=" card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img2.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Pekín</p>
+                        <p class="text-white">China</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+            <!-- </div>     -->
+            <!-- <div class="gap-4"> -->
+                <div class="card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img3.png">
+                    <div class="content-text">
+                        <p class="text-white bold">La Habana</p>
+                        <p class="text-white">Cuba</p>
+                    </div>
+                     
+                        <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                    
                 </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img10.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img7.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img4.jpg">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img5.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img6.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img3.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img8.jpg">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img9.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img2.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img11.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img12.jpg">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img13.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img14.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img15.jpg">
-                </div>
-                <div class="h-auto max-w-full ">
-                    <img class="rounded-lg  transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="img1" src="./images/img16.jpg">
-                </div>
-            </div>
+                <div class="card">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img4.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Madrid</p>
+                        <p class="text-white">España</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+                <div class=" card ">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img9.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Buenos Aires</p>
+                        <p class="text-white">Argentina</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+            <!-- </div>    
+            <div class="gap-4"> -->
+                <div class=" card ">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img10.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Bogotá</p>
+                        <p class="text-white">Colombia</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+                <div class=" card ">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img11.png">
+                    <div class="content-text">
+                        <p class="text-white bold">Quito</p>
+                        <p class="text-white">Ecuador</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+                <div class=" card ">
+                    <img class="rounded-lg  transition-all duration-500 cursor-pointer" alt="img1" src="./images/img12.png">
+                    <div class="content-text">
+                        <p class="text-white bold">México</p>
+                        <p class="text-white">México</p>
+                    </div>
+                         <a class="element-hover cursor-pointer rounded-lg text-por text-white color-btn py-3 px-4"> 
+                        <i class="fa fa-map text-white text-xl"></i> Ver en Google Maps</a>
+                 </div>
+            <!-- </div> -->
+       
             
         </div>
 
@@ -76,6 +144,9 @@
             <p class="text-center text-white text-lg">Grid Gallery hecho por Ceci ♥</p>
         </div>
     </div>
+
+
+    
 </body>
  
 </html>
